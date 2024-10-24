@@ -209,6 +209,7 @@ function initializeNavigation() {
         button.addEventListener('click', function() {
             configPanel.style.display = this.textContent === 'Configuración' ? 'block' : 'none';
             monitoringPanel.style.display = this.textContent === 'Lecturas' ? 'grid' : 'none';
+            this.textContent === "Guía" ? window.open("https://bmsguia.netlify.app/") : "none";
         });
     });
 }
