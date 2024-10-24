@@ -62,9 +62,11 @@ let datap = {
 }
 // Función para actualizar valores de monitoreo
 function updateMonitoringValues() {
-    fetch("/lec")
-        .then(response => response.json())
-        .then(data => {
+//    fetch("/lec")
+//        .then(response => response.json())
+//        .then(data => {         
+            let data = {bat1: 3.7, bat2: 3.8, bat3: 4, bat4: 4.1, bat5: 3.5,
+                bat6: 4.2, Total: 23.3, Current: 500, Temperature: 35, }
             let soc = {};
             for (let key in data) {
                 if (data.hasOwnProperty(key)) {
@@ -83,7 +85,7 @@ function updateMonitoringValues() {
             // Calcular SOC total y otros valores
             calculateAndUpdateSOC(soc, data);
             datap = data;
-        });
+//        });
 }
 
 function calculateAndUpdateSOC(soc, data) {
