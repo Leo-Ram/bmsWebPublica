@@ -1,7 +1,7 @@
 :root {
     /* Modo claro */
-    --primary-color: #1a237e;
-    --secondary-color: #3949ab;
+    --primary-color: #00923F;
+    --secondary-color: #00923F;
     --background-color: #f0f2f5;
     --card-background: #ffffff;
     --text-color: #333333;
@@ -13,8 +13,8 @@
 }
 
 [data-theme="dark"] {
-    --primary-color: #000051;
-    --secondary-color: #1a237e;
+    --primary-color: #00923F99;
+    --secondary-color: #00923F66;
     --background-color: #121212;
     --card-background: #1e1e1e;
     --text-color: #ccc;
